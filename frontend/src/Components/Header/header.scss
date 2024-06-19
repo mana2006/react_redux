@@ -1,0 +1,38 @@
+
+.info-container {
+    padding: 15px;
+    width: 400px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
+    .info-edit {
+        border: 2px solid white;
+        border-radius: 20px;
+        width: 60px;
+        padding: 15px;
+        text-align: center;
+        align-self: flex-end;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+    }
+
+    .info-avatar {
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .info-username {
+        padding-bottom: 10px;
+    }
+
+    .info-age {
+        padding-bottom: 10px;
+    }
+
+    .info-about {
+        padding-bottom: 10px;
+    }
+
+}

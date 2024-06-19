@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  background-color: black;
+  color: white;
+  width: 430px;
+  height: auto;
+}
+
+.loading {
+  color: white;
+  text-align: center;
+}
+
+.error {
+  color: rgb(255, 56, 56);
+  text-align: center;
+}
