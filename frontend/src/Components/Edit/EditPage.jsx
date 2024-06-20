@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './editpage.scss';
 import Input from '../InputFields/Input';
 import { useDispatch, useSelector } from 'react-redux';
-import { update } from '../../redux/userSlice';
+import { updatedUser } from '../../redux/apiRequests';
 const EditPage = (props) => {
   const { setEdit } = props;
 
@@ -34,7 +34,7 @@ const EditPage = (props) => {
       avaUrl: image,
       themeColor: themeColor
     }
-    dispatch(update(updateUser));
+    updatedUser(updateUser, dispatch)
   };
   return (
     <form onSubmit={handleSubmit}>
