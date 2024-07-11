@@ -1,9 +1,10 @@
 import './footer.scss';
-const Footer = () => {
+const Footer = (props) => {
+    const {isOpenPost, setOpenPost} = props;
     return (
         <footer>
-            <div className="footer-title">
-                +
+            <div className="footer-title" onClick={() => setOpenPost(!isOpenPost)}>
+                {!isOpenPost ? "+" : "x"}
             </div>
         </footer>
     );
